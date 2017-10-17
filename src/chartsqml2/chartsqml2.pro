@@ -51,7 +51,7 @@ win32 {
     QMAKE_TARGET_DESCRIPTION = "Charts QML plugin for Qt."
 }
 
-target.path=$${PREFIX}/lib
+target.path=$$PREFIX/lib/qt5/qml/$$TARGETPATH
 class_headers.path =$${PREFIX}/include/$$MODULE_INCNAME
 targ_headers.path =$${PREFIX}/include/$$MODULE_INCNAME
 private_headers.path=$${PREFIX}/include/$$MODULE_INCNAME/$$VERSION/$$MODULE_INCNAME/private
