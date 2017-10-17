@@ -50,3 +50,16 @@ win32 {
     QMAKE_TARGET_PRODUCT = "Qt Charts (Qt $$QT_VERSION)"
     QMAKE_TARGET_DESCRIPTION = "Charts QML plugin for Qt."
 }
+
+target.path=$${PREFIX}/lib
+class_headers.path =$${PREFIX}/include/$$MODULE_INCNAME
+targ_headers.path =$${PREFIX}/include/$$MODULE_INCNAME
+private_headers.path=$${PREFIX}/include/$$MODULE_INCNAME/$$VERSION/$$MODULE_INCNAME/private
+qpa_headers.path=$${PREFIX}/include/$$MODULE_INCNAME/$$VERSION/$$MODULE_INCNAME/qpa
+pritarget.path = $${PREFIX}/lib/qt5/mkspecs/modules
+privpritarget.path = $${PREFIX}/lib/qt5/mkspecs/modules
+cmake_qt5_plugin_file.path = $${PREFIX}/lib/cmake/Qt5$${CMAKE_MODULE_NAME}
+cmake_qt5_module_files.path = $${PREFIX}/lib/cmake/Qt5$${CMAKE_MODULE_NAME}
+qmldir.path = $$PREFIX/lib/qt5/qml/$$TARGETPATH
+
+CONFIG -= create_cmake

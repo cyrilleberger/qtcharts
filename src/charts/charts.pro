@@ -87,3 +87,15 @@ win32:!winrt:!wince {
 }
 
 load(qt_module)
+
+target.path=$${PREFIX}/lib
+class_headers.path =$${PREFIX}/include/$$MODULE_INCNAME
+targ_headers.path =$${PREFIX}/include/$$MODULE_INCNAME
+private_headers.path=$${PREFIX}/include/$$MODULE_INCNAME/$$VERSION/$$MODULE_INCNAME/private
+qpa_headers.path=$${PREFIX}/include/$$MODULE_INCNAME/$$VERSION/$$MODULE_INCNAME/qpa
+pritarget.path = $${PREFIX}/lib/qt5/mkspecs/modules
+privpritarget.path = $${PREFIX}/lib/qt5/mkspecs/modules
+cmake_qt5_plugin_file.path = $${PREFIX}/lib/cmake/Qt5$${CMAKE_MODULE_NAME}
+cmake_qt5_module_files.path = $${PREFIX}/lib/cmake/Qt5$${CMAKE_MODULE_NAME}
+
+CONFIG -= create_cmake
